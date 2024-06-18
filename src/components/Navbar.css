@@ -1,23 +1,65 @@
 /* src/components/Navbar.css */
+@keyframes logo-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .navbar {
-    text-align: center;
-    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #010101;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 70px; /* Increase the height for better visibility */
+    animation: logo-bounce 2s infinite;
+    border-radius: 10px; /* Optional: Add border radius if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+    margin-right: 20px; /* Add margin to separate it from the nav items */
 }
 
 .nav-list {
     list-style: none;
-    padding: 0;
     display: flex;
-    justify-content: center;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-list li a {
     color: #FFF;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-list li a:hover {
     color: #FFD700; /* Gold color */
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
 }
