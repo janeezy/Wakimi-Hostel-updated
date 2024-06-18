@@ -1,15 +1,15 @@
-/// src/App.js
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Welcome from './components/Welcome';
 import Spaces from './components/Spaces';
 import Facilities from './components/Facilities';
-import Booking from './components/Booking';
+import BookingForm from './components/BookingForm';
 import Explore from './components/Explore';
 import Blog from './components/Blog';
+import ContactUs from './components/ContactUs'; // Import ContactUs component
 import Footer from './components/Footer';
-import BookingForm from './components/BookingForm';
 import './App.css';
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <Route path="/booking" element={<BookingForm />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<ContactUs />} /> {/* Add ContactUs route */}
         </Routes>
         <Footer />
       </div>

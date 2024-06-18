@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import logo from '../images/logo.png';
+import logo from '../images/logo2.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
@@ -22,7 +22,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="logo-container">
-                <img src={logo} alt="Wakimi Hostel Logo" className="logo" />
+                <Link to="/">
+                    <img src={logo} alt="Wakimi Hostel Logo" className="logo" />
+                </Link>
             </div>
             <ul className="nav-list">
                 <li><Link to="/">Welcome</Link></li>

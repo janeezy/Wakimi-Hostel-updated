@@ -1,41 +1,208 @@
 /* src/components/Welcome.css */
+/* src/components/Welcome.css */
 .welcome {
-    background-color: #FFD700; /* Gold color */
-    color: #010101;
     padding: 60px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .welcome .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-content {
     text-align: center;
+    margin-bottom: 30px;
+    animation: slideInFromRight 1s ease-in-out;
 }
 
-.welcome h1 {
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.welcome-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.welcome-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-content {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.welcome-content h1 {
     font-size: 48px;
+    color: #010101;
     margin-bottom: 20px;
 }
 
-.welcome p {
+.welcome-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.welcome-content p {
     font-size: 18px;
+    color: #666;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-.welcome-images {
+.benefits-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.benefits-list li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.location-contact {
+    margin-top: 30px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.location-contact h3 {
+    font-size: 24px;
+    color: #010101;
+    margin-bottom: 10px;
+}
+
+.location-contact p, .location-contact ul {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.location-contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.location-contact ul li {
+    margin-bottom: 10px;
+}
+
+.book-now-container {
+    margin-top: 30px;
+}
+
+.book-now-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFD700;
+    color: #010101;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+    background-color: #FFC700;
+}
+
+.gallery {
+    margin: 50px 0;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.gallery-images {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
 }
 
-.welcome-images img {
-    width: 45%;
+.gallery-images img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.welcome-images img:hover {
+.gallery-images img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials {
+    background-color: #fff;
+    padding: 50px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.testimonial p:last-child {
+    font-style: italic;
+    color: #333;
 }

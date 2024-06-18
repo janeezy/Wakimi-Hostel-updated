@@ -1,9 +1,17 @@
 /* src/components/BookingForm.css */
+/* src/components/BookingForm.css */
+
 .booking-form {
     padding: 40px;
     text-align: center;
-    background-color: #f4c542;
+    
     color: #010101;
+    max-width: 600px; /* Limit the maximum width of the form */
+    margin: 0 auto; /* Center the form on the page */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgb(0, 0, 0); /* Add a subtle shadow */
+    scroll-behavior: smooth;
+    justify-items: center;
 }
 
 .booking-form h2 {
@@ -15,18 +23,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px; /* Increase gap between elements */
+    align-items: center;
+    text-align: center;
 }
 
 .booking-form label {
     font-size: 18px;
     margin-right: 10px;
+    width: 100%; /* Make labels full width */
+    text-align: center; /* Align text to the left */
 }
 
-.booking-form input, .booking-form select {
+.booking-form input,
+.booking-form select {
     padding: 10px;
     font-size: 16px;
-    width: 300px;
+    width: 100%; /* Make inputs and selects full width */
+    max-width: 300px; /* Limit the maximum width */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 5px; /* Add rounded corners */
 }
 
 .booking-form button {
@@ -37,8 +53,12 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add margin to the top of the button */
+    width: 100%; /* Make button full width */
+    max-width: 300px; /* Limit the maximum width */
 }
 
 .booking-form button:hover {
     background-color: #333;
 }
+

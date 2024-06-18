@@ -46,8 +46,8 @@ const BookingForm = () => {
                     <label>Room Type:</label>
                     <select name="roomType" value={formData.roomType} onChange={handleChange} required>
                         <option value="">Select Room Type</option>
-                        <option value="single">Single Room</option>
-                        <option value="double">Double Room</option>
+                        <option value="single">Single Room 1 person</option>
+                        <option value="double">Double Room 2 persons</option>
                         <option value="suite">Suite</option>
                     </select>
                 </div>
