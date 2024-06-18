@@ -1,0 +1,23 @@
+/* src/components/Navbar.css */
+.navbar {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-list li a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #FFD700; /* Gold color */
+}
