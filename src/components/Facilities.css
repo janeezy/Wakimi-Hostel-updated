@@ -1,0 +1,14 @@
+/* src/components/Facilities.css */
+.facilities {
+    padding: 20px;
+    text-align: center;
+}
+
+.facilities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.facilities li {
+    margin: 10px 0;
+}

@@ -1,17 +1,17 @@
 // src/components/Navbar.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
-
 const Navbar = () => {
     return (
         <nav className="navbar">
             <ul className="nav-list">
-                <li><a href="#welcome">Welcome</a></li>
-                <li><a href="#spaces">Spaces</a></li>
-                <li><a href="#facilities">Facilities</a></li>
-                <li><a href="#booking">Book Now</a></li>
-                <li><a href="#explore">Explore Ibadan</a></li>
-                <li><a href="#blog">Blog</a></li>
+                <li><Link to="/">Welcome</Link></li>
+                <li><Link to="/spaces">Spaces</Link></li>
+                <li><Link to="/facilities">Facilities</Link></li>
+                <li><Link to="/booking">Book Now</Link></li>
+                <li><Link to="/explore">Explore Ibadan</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
             </ul>
         </nav>
     );

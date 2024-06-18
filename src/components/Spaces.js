@@ -1,6 +1,11 @@
 // src/components/Spaces.js
+// src/components/Spaces.js
 import React from 'react';
 import './Spaces.css';
+
+import image1 from '../images/image1.png';
+import image2 from '../images/image2.png';
+import image3 from '../images/image3.png';
 
 const Spaces = () => {
     return (
@@ -8,8 +13,8 @@ const Spaces = () => {
             <h2>28 Spectacular Spaces</h2>
             <h4>Rooms with private toilet and kitchen</h4>
             <div className="gallery">
-                <img srcg" alt="Room Image" />
-                <img src="./images/lounge1.png" alt="Lounge Image" />
+                <img src="../images/image1.png" alt="Room Image" />
+                <img src="../images/image2.png" alt="Lounge Image" />
                 {/* Add more images as necessary */}
             </div>
         </section>

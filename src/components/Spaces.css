@@ -1,0 +1,32 @@
+/* src/components/Spaces.css */
+.spaces {
+    padding: 40px;
+    text-align: center;
+}
+
+.spaces h2 {
+    font-size: 36px;
+    color: #010101;
+}
+
+.spaces h4 {
+    font-size: 24px;
+    color: #666;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}

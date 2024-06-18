@@ -1,0 +1,19 @@
+/* src/components/Booking.css */
+.booking {
+    padding: 20px;
+    text-align: center;
+}
+
+.booking button {
+    background-color: #000;
+    color: #f4c542;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking button:hover {
+    background-color: #333;
+}
