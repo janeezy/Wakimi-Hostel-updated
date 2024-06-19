@@ -1,66 +1,76 @@
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .navbar {
-    background-color: black;
+    background-color: #000000 !important;
+    padding: 0 10px;
 }
 
-.toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.title {
+.logo-link {
     display: flex;
     align-items: center;
 }
 
 .logo {
-    height: 50px; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
+    max-height: 50px;
+    margin-right: auto;
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 5px;
 }
 
-.nav-links {
-    display: flex;
-    gap: 20px;
-}
-
-.nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.nav-link:hover {
+.logo-text {
     color: #FFD700;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px; /* Space between logo and text */
+    animation: textAnimation 2s ease-in-out infinite alternate;
 }
 
 .menuButton {
-    display: none; /* Hidden by default */
+    margin-left: auto;
+    color: #ffffff;
 }
 
-@media (max-width: 768px) {
-    .menuButton {
-        display: block; /* Show on small screens */
-    }
-
-    .nav-links {
-        display: none; /* Hide nav links on small screens */
-    }
+.MuiPaper-root {
+    background-color: #000000 !important;
 }
 
-.MuiPaper-root .MuiMenu-list {
-    background-color: white;
-}
-
-.MuiPaper-root .MuiMenu-list a {
-    color: black;
+.MuiMenuItem-root a {
+    color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
-    display: block;
-    padding: 10px 20px;
 }
 
-.MuiPaper-root .MuiMenu-list a:hover {
-    background-color: #f0f0f0;
+.MuiMenuItem-root a:hover {
     color: #FFD700;
+}
+
+.menu-link {
+    color: #ffffff;
+    text-decoration: none;
+    width: 100%;
+}
+
+.menu-link:hover {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+@keyframes textAnimation {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateY(-10px);
+    }
 }

@@ -1,40 +1,21 @@
-/* src/App.css */
-/* src/App.css */
-body {
-    font-family: 'Arial', sans-serif;
+body, html, #root {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #010101;
-    font-weight: bold;
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
-}
-
-p {
-    line-height: 1.6;
-    margin: 0 0 20px;
-}
-
-.container {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #010101;
-    color: #FFD700; /* Gold color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #333;
 }

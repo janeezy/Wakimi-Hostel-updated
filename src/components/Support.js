@@ -22,7 +22,9 @@ const Support = () => {
                     <p>For any support inquiries, please reach out to us through the following channels:</p>
                     <ul>
                         <li>Email: support@wakimihostel.com</li>
-                        <li>Phone: +2348080737373</li>
+                        <li>Phone: +2348138156882</li>
+                        <li>Phone: +2348075946179</li>
+                        <li>WhatsApp: +2348080737373</li>
                         <li>WhatsApp: +2348037003150</li>
                     </ul>
                 </div>

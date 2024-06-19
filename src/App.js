@@ -16,18 +16,20 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div>
+      <div className="App">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Welcome />} />
-          <Route path="/spaces" element={<Spaces />} />
-          <Route path="/facilities" element={<Facilities />} />
-          <Route path="/booking" element={<BookingForm />} />
-          <Route path="/explore" element={<Explore />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/support" element={<Support />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Welcome />} />
+            <Route path="/spaces" element={<Spaces />} />
+            <Route path="/facilities" element={<Facilities />} />
+            <Route path="/booking" element={<BookingForm />} />
+            <Route path="/explore" element={<Explore />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/support" element={<Support />} />
+          </Routes>
+        </main>
         <Footer />
       </div>
     </Router>

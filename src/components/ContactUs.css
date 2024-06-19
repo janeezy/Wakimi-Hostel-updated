@@ -29,7 +29,7 @@
 }
 
 .social-media li a {
-    color: #1e88e5;
+    
     text-decoration: none;
 }
 
@@ -62,7 +62,7 @@
     padding: 10px 20px;
     font-size: 18px;
     color: #fff;
-    background-color: #1e88e5;
+    background-color: #6f6220;
     border: none;
     border-radius: 5px;
     cursor: pointer;

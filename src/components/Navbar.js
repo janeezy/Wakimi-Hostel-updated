@@ -5,9 +5,8 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import Typography from '@mui/material/Typography';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../images/logow.png';
+import logo from '../images/logows.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -23,22 +22,12 @@ const Navbar = () => {
 
     return (
         <AppBar position="static" className="navbar">
-            <Toolbar className="toolbar">
-                <Typography variant="h6" className="title">
-                    <Link to="/">
-                        <img src={logo} alt="Wakimi Logo" className="logo" />
-                    </Link>
-                </Typography>
-                <div className="nav-links">
-                    <Link to="/" className="nav-link">Welcome</Link>
-                    <Link to="/spaces" className="nav-link">Spaces</Link>
-                    <Link to="/facilities" className="nav-link">Facilities</Link>
-                    <Link to="/booking" className="nav-link">Book Now</Link>
-                    <Link to="/explore" className="nav-link">Explore Ibadan</Link>
-                    <Link to="/blog" className="nav-link">Blog</Link>
-                    <Link to="/contact" className="nav-link">Contact Us</Link>
-                    <Link to="/support" className="nav-link">Support</Link>
-                </div>
+            <Toolbar>
+                <Link to="/" className="logo-link">
+                    <img src={logo} alt="Wakimi Logo" className="logo" />
+                    <span className="logo-text">Wakimi</span>
+                </Link>
+                <div className="grow"></div>
                 <IconButton
                     edge="end"
                     className="menuButton"
@@ -54,14 +43,14 @@ const Navbar = () => {
                     open={Boolean(anchorEl)}
                     onClose={handleClose}
                 >
-                    <MenuItem onClick={handleClose}><Link to="/">Welcome</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link to="/spaces">Spaces</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link to="/facilities">Facilities</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link to="/booking">Book Now</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link to="/explore">Explore Ibadan</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link to="/blog">Blog</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link to="/contact">Contact Us</Link></MenuItem>
-                    <MenuItem onClick={handleClose}><Link to="/support">Support</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/" className="menu-link">Welcome</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/spaces" className="menu-link">Spaces</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/facilities" className="menu-link">Facilities</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/booking" className="menu-link">Book Now</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/explore" className="menu-link">Explore Ibadan</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/blog" className="menu-link">Blog</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/contact" className="menu-link">Contact Us</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/support" className="menu-link">Support</Link></MenuItem>
                 </Menu>
             </Toolbar>
         </AppBar>

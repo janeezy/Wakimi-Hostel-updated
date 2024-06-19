@@ -71,14 +71,14 @@ const Welcome = () => {
                         <StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon />
                     </div>
                     <p>"Wakimi Hostel is the best place I've ever stayed in. The facilities are top-notch, and the staff are very friendly."</p>
-                    <p>- John Doe</p>
+                    <p>- John Okoro</p>
                 </div>
                 <div className="testimonial">
                     <div className="stars">
                         <StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon />
                     </div>
                     <p>"I love the cleanliness and the security at Wakimi Hostel. I feel safe and at home here."</p>
-                    <p>- Jane Smith</p>
+                    <p>- Tosin Okoro</p>
                 </div>
                 <div className="testimonial">
                     <div className="stars">
@@ -92,7 +92,7 @@ const Welcome = () => {
                         <StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon />
                     </div>
                     <p>"Living here has been a wonderful experience. The environment is peaceful and the services are top-notch."</p>
-                    <p>- Emily Davis</p>
+                    <p>- victoria Mmadu</p>
                 </div>
                 <p className="animate-slide-up">Over 20 people have rated Wakimi Hostel 5 stars!</p>
             </div>
