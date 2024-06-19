@@ -1,52 +1,18 @@
 /* src/components/Explore.css */
-.explore {
-    padding: 60px 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-}
-
-.explore .container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.explore h2 {
-    font-size: 36px;
-    color: #010101;
-    margin-bottom: 20px;
-}
-
-.explore h3 {
-    font-size: 28px;
-    color: #010101;
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-
-.explore p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.explore ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    text-align: left;
-    margin-bottom: 20px;
-}
-
-.explore ul li {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-}
-/* src/components/Facilities.css */
 .facilities {
     padding: 60px 20px;
     background-color: #f8f8f8;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .facilities .container {
@@ -55,73 +21,130 @@
 }
 
 .facilities h2 {
-    font-size: 36px;
+    font-size: 48px;
     color: #010101;
     margin-bottom: 40px;
 }
 
 .facility {
-    display: flex;
-    align-items: center;
     margin-bottom: 40px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideInFromLeft 1s ease-in-out;
 }
 
-.facility:hover {
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.facility-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.facility-image:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.facility-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-right: 1px solid #ddd;
-    flex-shrink: 0;
-}
-
 .facility-description {
-    padding: 20px;
     text-align: left;
-    flex-grow: 1;
 }
 
 .facility-description h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #010101;
-}
-
-.facility-description p {
-    font-size: 16px;
-    color: #666;
-}
-
-.cost-information {
-    margin-top: 40px;
-    text-align: left;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.cost-information h3 {
-    font-size: 24px;
+    font-size: 36px;
     color: #010101;
     margin-bottom: 20px;
 }
 
-.cost-information p {
-    font-size: 16px;
+.facility-description p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.benefits-box {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: hsla(42, 51%, 33%, 0.527);
+    border-radius: 10px;
+    color: #010101;
+}
+
+.benefits-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.benefits-list li {
+    font-size: 18px;
     color: #666;
     margin-bottom: 10px;
 }
 
-.cost-information strong {
+.contact-book {
+    margin-top: 50px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-book h3 {
+    font-size: 24px;
     color: #010101;
+    margin-bottom: 10px;
+}
+
+.contact-book p, .contact-book ul {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-book ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-book ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-book ul li svg {
+    margin-right: 10px;
+}
+
+.book-now-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.book-now-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #FFD700;
+    color: #010101;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-button:hover {
+    background-color: #FFC700;
 }

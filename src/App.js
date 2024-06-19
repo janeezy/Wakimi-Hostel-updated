@@ -8,8 +8,9 @@ import Facilities from './components/Facilities';
 import BookingForm from './components/BookingForm';
 import Explore from './components/Explore';
 import Blog from './components/Blog';
-import ContactUs from './components/ContactUs'; // Import ContactUs component
 import Footer from './components/Footer';
+import ContactUs from './components/ContactUs';
+import Support from './components/Support';
 import './App.css';
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
           <Route path="/booking" element={<BookingForm />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<ContactUs />} /> {/* Add ContactUs route */}
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/support" element={<Support />} />
         </Routes>
         <Footer />
       </div>

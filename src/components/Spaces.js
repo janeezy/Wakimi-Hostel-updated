@@ -1,34 +1,45 @@
 // src/components/Spaces.js
 import React from 'react';
 import './Spaces.css';
-import image1 from '../images/image1.png';
-import image2 from '../images/image2.png';
-import image3 from '../images/image3.png';
-import image4 from '../images/image4.png';
+import roomImage1 from '../images/image6.png';
+import roomImage2 from '../images/gymImage.png';
+import roomImage3 from '../images/image3.png';
+import roomImage4 from '../images/image4.png';
+import roomImage5 from '../images/image5.png';
+import roomImage6 from '../images/image2.png';
+import PhoneIcon from '@mui/icons-material/Phone';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Spaces = () => {
     return (
         <section className="spaces" id="spaces">
+            <h1 className="animate-fade-in">Our 28 Spectacular Rooms</h1>
             <div className="container">
-                <h2>28 Spectacular Spaces</h2>
-                <h4>Rooms with private toilet and kitchen</h4>
-                <div className="gallery">
-                    <img src={image1} alt="Room Image 1" />
-                    <img src={image2} alt="Lounge Image 2" />
-                    <img src={image3} alt="Room Image 3" />
-                    <img src={image4} alt="Lounge Image 4" />
-                    <img src="https://cdn.pixabay.com/photo/2019/08/21/10/02/bed-4416515_960_720.jpg" alt="Luxurious Bedroom" />
+                <p className="animate-slide-up">
+                    Each room at Wakimi Hostel is designed to offer a luxurious and comfortable stay. Our rooms are equipped with modern amenities to ensure that your experience is nothing short of spectacular.
+                </p>
+                <div className="image-gallery">
+                    <div className="image-content animate-slide-up">
+                        <img src={roomImage1} alt="Room 1" className="space-image" />
+                        <img src={roomImage2} alt="Room 2" className="space-image" />
+                        <img src={roomImage3} alt="Room 3" className="space-image" />
+                        <img src={roomImage4} alt="Room 4" className="space-image" />
+                        <img src={roomImage5} alt="Room 5" className="space-image" />
+                        <img src={roomImage6} alt="Room 5" className="space-image" />
+                    </div>
                 </div>
-                <div className="description">
-                    <p>
-                        Each room in Wakimi Hostel is designed to provide a luxurious and comfortable stay. Our rooms are furnished with modern amenities and stylish interiors. Each room comes with a private toilet and kitchen, ensuring you have all the privacy and convenience you need. The spacious rooms and serene lounge areas offer the perfect environment to relax and unwind.
-                    </p>
-                    <p>
-                        Our hostel is equipped with a state-of-the-art gym and a game centre, providing plenty of opportunities for recreation and fitness. With constant water supply and 24/7 electricity powered by prepaid meters and backup solar for essential devices, we ensure a hassle-free living experience.
-                    </p>
-                    <p>
-                        At Wakimi Hostel, we prioritize your safety with enhanced security measures including CCTV surveillance and a live-in security guard. Enjoy the convenience of cleaning services and wastage disposal, making your stay comfortable and stress-free.
-                    </p>
+                <div className="book-now-container animate-slide-up">
+                    <a href="/booking" className="book-now-button">Book Now</a>
+                </div>
+                <div className="contact-info animate-slide-up">
+                    <h3>Contact Us</h3>
+                    <p>For inquiries and bookings, please call:</p>
+                    <ul>
+                        <li><WhatsAppIcon /> +2348080737373 WhatsApp</li>
+                        <li><WhatsAppIcon /> +2348037003150 WhatsApp</li>
+                        <li><PhoneIcon /> +2348138156882 Phone</li>
+                        <li><PhoneIcon /> +2348075946179 Phone</li>
+                    </ul>
                 </div>
             </div>
         </section>

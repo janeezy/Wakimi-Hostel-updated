@@ -1,10 +1,10 @@
-/* src/components/Spaces.css */
+/* src/components/Support.css */
 * {
     text-align: center;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.spaces {
+.support {
     padding: 60px 20px;
     background-color: #f8f8f8;
     color: #333;
@@ -20,7 +20,7 @@
     }
 }
 
-.spaces .container {
+.support .container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -28,7 +28,7 @@
     align-items: center;
 }
 
-.spaces h1 {
+.support h1 {
     font-size: 48px;
     color: #333;
     margin-bottom: 20px;
@@ -45,7 +45,7 @@
     }
 }
 
-.spaces p {
+.support p {
     font-size: 20px;
     color: #666;
     line-height: 1.8;
@@ -62,55 +62,19 @@
     }
 }
 
-.image-gallery {
+.faq-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.faq-list li {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 10px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.image-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-.space-image {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.space-image:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.book-now-container {
-    margin-top: 30px;
-}
-
-.book-now-button {
-    margin: 30px;
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #FFD700;
-    color: #010101;
-    text-decoration: none;
-    font-size: 20px; /* Increased font size */
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
-}
-
-.book-now-button:hover {
-   
-    background-color: #FFC700;
+    align-items: center;
 }
 
 .contact-info {

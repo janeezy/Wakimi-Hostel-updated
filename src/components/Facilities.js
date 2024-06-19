@@ -1,4 +1,3 @@
-// src/components/Facilities.js
 import React from 'react';
 import './Facilities.css';
 import gymImage from '../images/gymImage.png'; // Replace with actual image path if needed
@@ -14,7 +13,7 @@ const Facilities = () => {
     return (
         <section className="facilities" id="facilities">
             <div className="container">
-                <h2>Modern Facilities</h2>
+                <h2 className="animate-slide-up">Modern Facilities</h2>
                 <div className="facility">
                     <img src={gymImage} alt="Gym" className="facility-image" />
                     <div className="facility-description">
@@ -69,6 +68,31 @@ const Facilities = () => {
                     <div className="facility-description">
                         <h3>Live-in Security Guard</h3>
                         <p>Live-in security guard to ensure your safety and peace of mind.</p>
+                    </div>
+                </div>
+                <div className="benefits-box">
+                    <h2 className="animate-slide-up">Benefits of Living in Wakimi Hostel</h2>
+                    <ul className="benefits-list animate-slide-up">
+                        <li>Comfortable and luxurious private rooms</li>
+                        <li>Proximity to major attractions and essential services</li>
+                        <li>Safe and secure environment with 24/7 security</li>
+                        <li>Reliable water and electricity supply</li>
+                        <li>Access to modern gym and game center</li>
+                        <li>Professional cleaning services</li>
+                        <li>Backup solar power for essential devices</li>
+                    </ul>
+                </div>
+                <div className="contact-book animate-slide-up">
+                    <h3>Contact Us</h3>
+                    <p>For inquiries and bookings, please call:</p>
+                    <ul>
+                        <li>+2348080737373 WhatsApp</li>
+                        <li>+2348037003150 WhatsApp</li>
+                        <li>+2348138156882 Phone</li>
+                        <li>+2348075946179 Phone</li>
+                    </ul>
+                    <div className="book-now-container">
+                        <a href="/booking" className="book-now-button">Book Now</a>
                     </div>
                 </div>
             </div>

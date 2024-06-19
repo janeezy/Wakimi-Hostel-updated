@@ -1,9 +1,16 @@
 /* src/components/Welcome.css */
-/* src/components/Welcome.css */
+* {
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+* {
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 .welcome {
     padding: 60px 20px;
     background-color: #f8f8f8;
-    text-align: center;
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -56,6 +63,8 @@
 
 .welcome-content {
     animation: slideInFromLeft 1s ease-in-out;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 @keyframes slideInFromLeft {
@@ -69,15 +78,17 @@
 
 .welcome-content h1 {
     font-size: 48px;
-    color: #010101;
+    color: #333;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .welcome-content h2 {
     font-size: 36px;
-    color: #333;
+    color: #555;
     margin-top: 30px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 
 .welcome-content p {
@@ -87,32 +98,68 @@
     margin-bottom: 30px;
 }
 
+.benefits-box {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    animation: fadeInBox 1s ease-in-out;
+}
+
+@keyframes fadeInBox {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .benefits-list {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding-left: 0;
     margin-bottom: 30px;
     text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
 .benefits-list li {
     font-size: 18px;
     color: #666;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.benefits-list li::before {
+    content: '•';
+    color: #FFD700;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
 .location-contact {
     margin-top: 30px;
     text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 0 auto;
 }
 
 .location-contact h3 {
     font-size: 24px;
-    color: #010101;
+    color: #333;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .location-contact p, .location-contact ul {
@@ -124,10 +171,24 @@
 .location-contact ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 .location-contact ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 10px;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location-contact ul li svg {
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .book-now-container {
@@ -143,6 +204,7 @@
     font-size: 18px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    font-weight: 600;
 }
 
 .book-now-button:hover {
@@ -157,12 +219,14 @@
     font-size: 36px;
     color: #333;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .gallery-images {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .gallery-images img {
@@ -184,16 +248,24 @@
     padding: 50px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .testimonials h2 {
     font-size: 36px;
     color: #333;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .testimonial {
     margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial p {
@@ -205,4 +277,15 @@
 .testimonial p:last-child {
     font-style: italic;
     color: #333;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.stars svg {
+    color: #FFD700;
+    margin: 0 2px;
 }
