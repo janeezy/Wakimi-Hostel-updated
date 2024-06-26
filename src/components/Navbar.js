@@ -51,6 +51,7 @@ const Navbar = () => {
                     <MenuItem onClick={handleClose}><Link to="/blog" className="menu-link">Blog</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link to="/contact" className="menu-link">Contact Us</Link></MenuItem>
                     <MenuItem onClick={handleClose}><Link to="/support" className="menu-link">Support</Link></MenuItem>
+                    <MenuItem onClick={handleClose}><Link to="/faq" className="menu-link">FAQ</Link></MenuItem>
                 </Menu>
             </Toolbar>
         </AppBar>

@@ -9,10 +9,10 @@ const ContactUs = () => {
                 <h2>Contact Us</h2>
                 <p>If you have any questions or need further information, feel free to reach out to us through the following channels:</p>
                 <ul className="social-media">
-                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                    <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li><a href="https://wa.me/2348080737373" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    <li className='link-colour'><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li className='link-colour' ><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li className=''><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li className=''><a href="https://wa.me/2348080737373" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                 </ul>
                 <form className="contact-form">
                     <label>

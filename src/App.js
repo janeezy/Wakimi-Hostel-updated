@@ -11,6 +11,8 @@ import Blog from './components/Blog';
 import Footer from './components/Footer';
 import ContactUs from './components/ContactUs';
 import Support from './components/Support';
+import FAQ from './components/FAQ';
+import Payment from './components/Payment';
 import './App.css';
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/support" element={<Support />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/payment" element={<Payment />} />
           </Routes>
         </main>
         <Footer />

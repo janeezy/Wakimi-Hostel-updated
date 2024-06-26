@@ -61,7 +61,7 @@
 .contact-form button {
     padding: 10px 20px;
     font-size: 18px;
-    color: #fff;
+    color: #100f0f;
     background-color: #6f6220;
     border: none;
     border-radius: 5px;
@@ -71,3 +71,22 @@
 .contact-form button:hover {
     background-color: #155a9c;
 }
+
+.social-media li a {
+    color: #100f0f;
+}
+
+.social-media li a  :hover {
+    color: #827626;
+}
+/* Specific styling for mobile devices */
+@media (max-width: 600px) {
+    .social-media a {
+        color: #FFD700; /* Mobile color */
+    }
+}
+
+    li a {
+        color: #686522;
+    }
+    

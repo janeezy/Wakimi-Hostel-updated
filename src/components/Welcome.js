@@ -1,11 +1,11 @@
 // src/components/Welcome.js
 import React from 'react';
 import './Welcome.css';
-import welcomeImage from '../images/image3.png'; // Ensure this path is correct
-import galleryImage1 from '../images/image2.png';
-import galleryImage2 from '../images/image3.png';
-import galleryImage3 from '../images/image4.png';
-import galleryImage4 from '../images/image5.png';
+import welcomeImage from '../wakimiimages/wakimi1-removebg-preview.png'; // Ensure this path is correct
+import galleryImage1 from '../wakimiimages/Wakimi2.jpeg';
+import galleryImage2 from '../wakimiimages/Wakimi3.jpeg';
+import galleryImage3 from '../wakimiimages/wakimi1.jpeg';
+import galleryImage4 from '../wakimiimages/Main Wakimi.png';
 import PhoneIcon from '@mui/icons-material/Phone';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import StarIcon from '@mui/icons-material/Star';
