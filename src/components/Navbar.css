@@ -3,11 +3,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f0f0f0;
 }
 
 .navbar {
     background-color: #000000 !important;
-    padding: 0 10px;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo-link {
@@ -17,17 +20,17 @@ body {
 
 .logo {
     max-height: 50px;
-    margin-right: auto;
-    background-color: #000000;
+    margin-right: 10px;
     padding: 5px;
     border-radius: 5px;
+    background-color: #000000;
 }
 
 .logo-text {
     color: #FFD700;
     font-size: 24px;
     font-weight: bold;
-    margin-left: 10px; /* Space between logo and text */
+    margin-left: 10px;
     animation: textAnimation 2s ease-in-out infinite alternate;
 }
 
@@ -38,11 +41,14 @@ body {
 
 .MuiPaper-root {
     background-color: #000000 !important;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .MuiMenuItem-root a {
     color: #ffffff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .MuiMenuItem-root a:hover {
@@ -53,11 +59,16 @@ body {
     color: #ffffff;
     text-decoration: none;
     width: 100%;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu-link:hover {
+    background-color: #333333;
     color: #FFD700;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .grow {
@@ -70,7 +81,21 @@ body {
         transform: translateY(0);
     }
     100% {
-        opacity: 0.5;
+        opacity: 0.7;
         transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .menu-link {
+        padding: 10px;
     }
 }

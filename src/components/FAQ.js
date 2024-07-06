@@ -11,7 +11,7 @@ const FAQ = () => {
             question: "What are the room rates?",
             answer: (
                 <ul>
-                    <li>850,000 Naira for rent - includes solar maintenance, light, water, security, and cleaning.</li>
+                    <li>850,000 Naira for rent - includes solar maintenance, light, water, Gym, Relaxation louge, security, and cleaning services.</li>
                     <li>An additional 30% security fee is obligatory to ensure rooms are not damaged and is refundable on exit of the apartment.</li>
                     <li>An additional 85,000 Naira will be required if two people will stay in the apartment.</li>
                 </ul>

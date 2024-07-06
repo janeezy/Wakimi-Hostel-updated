@@ -1,19 +1,154 @@
-/* src/components/Booking.css */
-.booking {
-    padding: 20px;
+/* src/components/Blog.css */
+
+body, html, #root {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.blog {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
-.booking button {
-    background-color: #000;
-    color: #f4c542;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.booking button:hover {
-    background-color: #333;
+.blog .container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.blog h2 {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 700;
+    animation: slideInDown 1s ease-in-out;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.blog-post {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: left;
+    animation: slideInUp 1s ease-in-out;
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.blog-post h3 {
+    font-size: 32px;
+    color: #010101;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.blog-post p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.blog-post ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.blog-post ul li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.blog-post ul li::before {
+    content: '•';
+    color: #FFD700;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Enhanced animations */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.blog-post p,
+.blog-post ul li {
+    animation: fadeInText 1s ease-in-out;
+}
+
+.blog-post ul li::before {
+    animation: fadeInText 1.5s ease-in-out;
+}
+
+/* Box shadows for a luxurious look */
+.blog-post {
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .blog h2 {
+        font-size: 36px;
+    }
+
+    .blog-post h3 {
+        font-size: 28px;
+    }
+
+    .blog-post p,
+    .blog-post ul li {
+        font-size: 16px;
+    }
+}
+

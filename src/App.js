@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -13,6 +12,7 @@ import ContactUs from './components/ContactUs';
 import Support from './components/Support';
 import FAQ from './components/FAQ';
 import Payment from './components/Payment';
+import Booking from './components/Booking';
 import './App.css';
 
 function App() {
@@ -26,6 +26,7 @@ function App() {
             <Route path="/spaces" element={<Spaces />} />
             <Route path="/facilities" element={<Facilities />} />
             <Route path="/booking" element={<BookingForm />} />
+            <Route path="/booking" element={<Booking />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<ContactUs />} />

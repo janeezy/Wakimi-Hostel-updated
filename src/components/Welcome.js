@@ -1,5 +1,5 @@
-// src/components/Welcome.js
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Welcome.css';
 import welcomeImage from '../wakimiimages/wakimi4.jpeg'; // Ensure this path is correct
 import galleryImage1 from '../wakimiimages/Wakimi2.jpeg';
@@ -10,13 +10,27 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import StarIcon from '@mui/icons-material/Star';
 
+const images = [welcomeImage, galleryImage1, galleryImage2, galleryImage3, galleryImage4];
+
 const Welcome = () => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const nextImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    };
+
+    const prevImage = () => {
+        setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    };
+
     return (
         <section className="welcome" id="welcome">
             <h1 className="animate-fade-in">Welcome to Wakimi Hostel Ibadan</h1>
             <div className="container">
                 <div className="image-content">
-                    <img src={welcomeImage} alt="Luxurious Hostel" className="welcome-image" />
+                    <button className="prev-button" onClick={prevImage}>❮</button>
+                    <img src={images[currentImageIndex]} alt="Luxurious Hostel" className="welcome-image" />
+                    <button className="next-button" onClick={nextImage}>❯</button>
                 </div>
                 <div className="welcome-content">
                     <p className="animate-slide-up">
@@ -51,7 +65,7 @@ const Welcome = () => {
                         </ul>
                     </div>
                     <div className="book-now-container animate-slide-up">
-                        <a href="/booking" className="book-now-button">Book Now</a>
+                        <Link to="/booking" className="book-now-button">Book Now</Link>
                     </div>
                 </div>
             </div>
@@ -92,7 +106,7 @@ const Welcome = () => {
                         <StarIcon /><StarIcon /><StarIcon /><StarIcon /><StarIcon />
                     </div>
                     <p>"Living here has been a wonderful experience. The environment is peaceful and the services are top-notch."</p>
-                    <p>- victoria Mmadu</p>
+                    <p>- Victoria Mmadu</p>
                 </div>
                 <p className="animate-slide-up">Over 20 people have rated Wakimi Hostel 5 stars!</p>
             </div>

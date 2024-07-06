@@ -72,6 +72,7 @@ const Facilities = () => {
                 </div>
                 <div className="benefits-box">
                     <h2 className="animate-slide-up">Benefits of Living in Wakimi Hostel</h2>
+                    
                     <ul className="benefits-list animate-slide-up">
                         <li>Comfortable and luxurious private rooms</li>
                         <li>Proximity to major attractions and essential services</li>

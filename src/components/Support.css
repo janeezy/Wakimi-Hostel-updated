@@ -1,74 +1,11 @@
-/* src/components/Support.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 .support {
     padding: 60px 20px;
-    background-color: #d0d0190a;
-    
-}
-
-.support .container {
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    box-shadow: #FFD700;
-}
-
-.support h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.support p {
-    font-size: 18px;
-    color: #080707;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.contact-info h3 {
-    font-size: 24px;
-    color: #d2cbcb;
-    margin-bottom: 10px;
-}
-
-.contact-info ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.contact-info ul li {
-    font-size: 18px;
-    color: #e6dfdf;
-    margin-bottom: 10px;
-}
-
-.contact-info ul li a {
-    color: #010101;
-    text-decoration: none;
-}
-
-.contact-info ul li a:hover {
-    color: #FFD700;
-}
-
-.faq-button-container {
-    margin-top: 20px;
-}
-
-.faq-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #010101;
-    color: #FFD700;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.faq-button:hover {
-    background-color: #000000;
-    color: #f8f8f8;
+    animation: fadeIn 1s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -78,6 +15,24 @@
     to {
         opacity: 1;
     }
+}
+
+.support .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.support h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 700;
+    animation: slideUp 1.2s ease-in-out;
 }
 
 @keyframes slideUp {
@@ -91,10 +46,90 @@
     }
 }
 
-.animate-fade-in {
-    animation: fadeIn 1s ease-in-out;
+.support p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    animation: slideUp 1.4s ease-in-out;
 }
 
-.animate-slide-up {
-    animation: slideUp 1s ease-in-out;
+.contact-info h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+    animation: slideUp 1.6s ease-in-out;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+    animation: slideUp 1.8s ease-in-out;
+}
+
+.contact-info ul li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li a {
+    color: #010101;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: #FFD700;
+}
+
+.faq-button-container {
+    margin-top: 20px;
+    animation: slideUp 2s ease-in-out;
+}
+
+.faq-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #010101;
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+}
+
+.faq-button:hover {
+    background-color: #000000;
+    color: #f8f8f8;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .support {
+        padding: 30px 15px;
+    }
+
+    .support h1 {
+        font-size: 28px;
+    }
+
+    .support p {
+        font-size: 16px;
+    }
+
+    .contact-info h3 {
+        font-size: 20px;
+    }
+
+    .contact-info ul li {
+        font-size: 16px;
+    }
+
+    .faq-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
 }

@@ -1,4 +1,3 @@
-// src/components/Payment.js
 import React, { useState } from 'react';
 import './Payment.css';
 
@@ -17,14 +16,14 @@ const Payment = () => {
     return (
         <section className="payment" id="payment">
             <div className="container">
-                <h2>Bank Transfer Payment</h2>
-                <p>Please make your payment to the following account details:</p>
-                <ul>
+                <h2 className="animate-fade-in">Bank Transfer Payment</h2>
+                <p className="animate-fade-in">Please make your payment to the following account details:</p>
+                <ul className="account-details animate-fade-in">
                     <li>Bank Name: Wakimi Bank</li>
                     <li>Account Number: 1234567890</li>
                     <li>Account Name: Wakimi Hostel</li>
                 </ul>
-                <form className="payment-form" onSubmit={handleSubmit}>
+                <form className="payment-form animate-slide-up" onSubmit={handleSubmit}>
                     <label>
                         Name:
                         <input
