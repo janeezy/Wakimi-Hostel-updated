@@ -1,4 +1,3 @@
-/* src/components/Footer.css */
 .footer {
     background-color: #000000;
     color: #ffffff;
@@ -60,6 +59,25 @@
     color: #FFD700;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #FFD700;
+}
+
 @media (max-width: 768px) {
     .footer p {
         font-size: 14px;
@@ -82,5 +100,14 @@
 
     .social-media li a {
         font-size: 18px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links a {
+        margin: 5px 0;
     }
 }
